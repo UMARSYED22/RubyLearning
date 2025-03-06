@@ -37,3 +37,19 @@ end
 [1,2,3,4,5,6].each do |num|
     puts num
 end
+#
+[1,2,3,4,5,6].each_with_index do |num,idx|
+    puts "#{num} = #{idx}"
+end
+
+inp = [1,2,3,4,5,6]
+output = []
+
+inp.each do |inputr|
+    output << inputr*2
+end
+
+puts output
+#p is use for same line output
+#map returns a new array by performing some actions on each elemenet of array
+p inp.map{|x| x * 2}

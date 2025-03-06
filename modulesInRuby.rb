@@ -32,19 +32,20 @@ class Bicycle
   end
 end
 
+
 car = Car.new
 car.start_engine  # Output: Engine started!
 
 
 begin   # it works as  a tryy block 
-  car.drive
+  car.drive  # Output: Car is driving!
 rescue NotImplementedError => e   #it works as a catch block
   puts "hello brother"
 ensure
   puts "Finally"
 end
 
-        # Output: Car is driving!
+       
 
 bicycle = Bicycle.new
 bicycle.start_engine  # Output: Bicycles don't have engines!
