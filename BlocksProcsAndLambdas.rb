@@ -23,3 +23,21 @@ my_lambda.call(5)
 
 my_lambda1 = ->(x,y){x*y}
 puts my_lambda1.call(5,5)
+
+
+def func()
+    proc=Proc.new{|x|  "Hello #{x}"} #if we write proc which returns something in a method so after calling prop the lines below the call will not execute.
+    puts proc.call("umar")
+    puts "Hello guyss!!!"
+end
+
+puts func()
+
+def func1()
+    lambda1 = ->(x){x+5} #if we write lambda which returns something in a method so after calling lambda the lines below the call will  execute.
+    #this is the main difference between lambda and prop
+    puts lambda1.call(5)
+    puts "Hello"
+end
+
+func1()
