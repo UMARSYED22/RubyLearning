@@ -6,7 +6,7 @@ class Dog
     #     @name=name
     #     @breed=breed
     # end
-end
+endk
 
 # dog=Dog.new("tommy","labrador")
 dog=Dog.new()

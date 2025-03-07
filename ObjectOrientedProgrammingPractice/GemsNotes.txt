@@ -1,0 +1,10 @@
+In Ruby, a gem is a packaged library or application that can be shared and reused across different projects. Gems are used to extend the functionality of Ruby applications by providing reusable code for common tasks, such as web development, testing, or data manipulation.
+
+Key Concepts of Ruby Gems:
+Packaging: A gem contains a set of Ruby code files, along with metadata like the gem's name, version, and dependencies.
+
+Distribution: Gems are distributed through a platform called RubyGems.org, where developers can publish their gems and others can download them.
+
+Installation: You can install a gem using the gem command-line tool, which is included with Ruby.
+
+Usage: Once installed, you can use the gem in your Ruby application by requiring it.
