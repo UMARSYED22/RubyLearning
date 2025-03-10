@@ -15,16 +15,11 @@ class Vehicle
   end
 end
 
-#module
-module Electric 
-  def charge_battery
-    raise NotImplementedError,"#{self.class} has not implemented the method"# if we not implement it in class which is including Electric it will throw error
-  end
-end 
+
 
 
 class Car < Vehicle
-  include Electric
+  
   def initialize(make,model,year,number_of_doors)
     super(make,model,year) # use to pass arguments to base calss constructor
     @number_of_doors=number_of_doors
@@ -32,9 +27,7 @@ class Car < Vehicle
   def display
     puts "Company= #{@make}, Model= #{@model}, Year= #{@year}, number_of_doors= #{@number_of_doors}"
   end
-  def charge_battery
-    puts "battery is charging" 
-  end
+  
 end
 
 v=Vehicle.new("Honda","Top",2024);
@@ -43,10 +36,26 @@ v.display
 
 c=Car.new("Tata","Base",2025,4)
 c.display
-c.charge_battery
 
 
 
 
+#module
+module Electric 
+  def charge_battery
+   
+  end
+end 
+
+
+
+class ElectricVehicle
+  include Electric
+  def charge_battery
+    puts "Battery is charging"
+  end
+end
+ev=ElectricVehicle.new
+ev.charge_battery
 
 

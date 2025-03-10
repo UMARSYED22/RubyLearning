@@ -52,7 +52,11 @@ puts "Minimum= #{min} and maximum= #{max}"
 
 
 #remove Duplicates
+
+
 p arr.uniq #in built method
+
+
 def removeDuplicates(arr)
   arr1=Array.new
   n=arr.length
@@ -68,7 +72,7 @@ p removeDuplicates(arr)
 
 
 #reverse an array
-p arr.reverse
+p arr.reverse #built in method
 
 def reverseArr(arr)
   si=0
